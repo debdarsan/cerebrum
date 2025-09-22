@@ -19,7 +19,6 @@ Cerebrum recreates this specialist team structure in AI, where each agent brings
 - **Multi-Tier Memory**: Episodic, semantic, and procedural memory systems
 - **Dynamic Orchestration**: Intelligent agent selection based on query complexity
 - **Framework Agnostic**: No dependency on LangChain or similar frameworks
-- **Production Ready**: Complete with testing, documentation, and deployment guides
 
 ## 🤖 The Agent Team
 

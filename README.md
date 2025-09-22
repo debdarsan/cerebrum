@@ -71,53 +71,6 @@ result = cerebrum.process_request(
 print(result['final_analysis'])
 ```
 
-### Live Demo
-
-```bash
-python examples/live_demo.py
-```
-
-## 📊 Real Data Example
-
-Cerebrum processes actual financial data from SEC filings:
-
-```python
-# Query: "What is Microsoft's revenue trend?"
-# 
-# CEREBRUM RESPONSE:
-# ═══════════════════════════════════════════════
-# 
-# FINANCIAL PERFORMANCE:
-# • Current Revenue: $65.6B (latest quarter)
-# • Growth Trajectory: 1.4% quarter-over-quarter  
-# • Long-term Growth: 44.8% total growth across 11 quarters
-# • Performance Status: Strong upward trend
-#
-# BUSINESS SEGMENT ANALYSIS:
-# • Total Enterprise Revenue: $234.4B (FY2024)
-# • Top Performing Segment: Intelligent Cloud (+19.9% YoY)
-# • Portfolio Diversification: 3 major business segments
-#
-# STRATEGIC INSIGHTS:
-# The data reveals a company in strong financial health with 
-# diversified revenue streams. The Intelligent Cloud segment's 
-# 19.9% growth indicates successful positioning in high-growth markets.
-```
-
-## 📁 Project Structure
-
-```
-cerebrum/
-├── cerebrum/core/          # Core system components
-│   ├── agents.py           # All agent implementations
-│   ├── orchestrator.py     # Main orchestrator
-│   ├── memory.py          # Memory system
-│   └── models.py          # Data models
-├── examples/              # Usage examples and demos
-├── tests/                 # Comprehensive test suite
-├── docs/                  # Detailed documentation
-└── data/                  # Sample financial data
-```
 
 ## 🔧 Configuration
 
@@ -135,28 +88,6 @@ OPENAI_API_KEY=your-openai-key
 TAVILY_API_KEY=your-tavily-key
 DATABASE_PATH=financials.db
 ```
-
-## 🧪 Running Tests
-
-```bash
-# Run all tests
-python -m pytest tests/
-
-# Run specific test
-python -m pytest tests/test_agents.py
-
-# Run with coverage
-python -m pytest tests/ --cov=cerebrum
-```
-
-## 📚 Documentation
-
-- [Installation Guide](docs/installation.md)
-- [Quick Start Tutorial](docs/quickstart.md)
-- [Agent Development Guide](docs/agent_development.md)
-- [API Reference](docs/api_reference.md)
-- [Architecture Overview](docs/architecture.md)
-- [Deployment Guide](docs/deployment.md)
 
 ## 🔬 Examples
 
@@ -184,25 +115,6 @@ result = cerebrum.process_request(
 )
 ```
 
-## 🤝 Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-### Development Setup
-
-```bash
-git clone https://github.com/yourusername/cerebrum.git
-cd cerebrum
-pip install -e ".[dev]"
-pre-commit install
-```
-
-## 📈 Performance
-
-- **Processing Speed**: < 2 seconds for complex multi-agent analysis
-- **Data Scale**: Handles 1000+ document chunks efficiently
-- **Memory Usage**: ~500MB for full system with embeddings
-- **Accuracy**: 85%+ confidence on financial analysis tasks
 
 ## 🔒 Security & Privacy
 
@@ -220,12 +132,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Microsoft Corporation for publicly available SEC filing data
 - OpenAI for GPT-4 API
 - The open-source community for foundational libraries
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/cerebrum/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/cerebrum/discussions)
-- **Email**: support@cerebrum-ai.com
 
 ## 🗺️ Roadmap
 
